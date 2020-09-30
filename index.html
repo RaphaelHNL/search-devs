@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Busca devs</title>
+</head>
+
+<body>
+  <h1>Search devs</h1>
+
+  <div class="input-field">
+    <input id="nameDev" type="text" class="validate">
+    <label for="name">Pesquisa por nome:</label>
+  </div>
+
+
+  <div class="container-Input">
+    <form>
+      <div class="inputLanguages">
+        <div class="inputCheckbox">
+          <label>
+            <input id="java" type="checkbox" value="java" checked />
+            <span>Java</span>
+          </label>
+
+          <label>
+            <input id="javascript" type="checkbox" value="javascript" checked />
+            <span>JavaScript</span>
+          </label>
+
+          <label>
+            <input id="python" type="checkbox" value="python" checked />
+            <span>Python</span>
+          </label>
+        </div>
+        <div>
+          <label class="radioOption">
+            <input id="eChecked" name="group1" type="radio" />
+            <span>E</span>
+          </label>
+
+          <label class="radioOption">
+            <input id="orChecked" name="group1" type="radio" checked />
+            <span>OU</span>
+          </label>
+        </div>
+      </div>
+    </form>
+
+  </div>
+
+
+  <div>
+    <h4>(<span id="countDevs"></span>) dev(s) encotrado(s)</h4>
+  </div>
+
+  <div id="tabDevs" class="row container"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="./js/script.js"></script>
+
+</body>
+
+</html>

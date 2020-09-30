@@ -1,0 +1,54 @@
+h1, h4{
+  text-align: center;
+}
+
+
+
+body {
+  padding: 10px;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  margin-left: 10px;
+
+  border-radius: 50%;
+}
+
+.dev {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid #919191;
+  
+}
+
+.imgLanguage img{
+  width: 30px;
+  height: 30px;
+}
+.container-Input{
+  margin-bottom: 50px;
+  font-size: 0;
+}
+
+
+.teste{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.inputLanguages{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+label{
+  margin-left: 10px;
+}
+
+
