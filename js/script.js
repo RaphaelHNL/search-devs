@@ -42,7 +42,7 @@ async function carregaPag() {
 
 async function fetchDevs() {
 
-  const res = await fetch('https://api-search-devs.herokuapp.com/', { method: 'GET', mode: 'cors' });
+  const res = await fetch('./js/dados/devs.json', { method: 'GET', mode: 'cors' });
   const json = await res.json();
 
   allDevs = json.map(devs => {
