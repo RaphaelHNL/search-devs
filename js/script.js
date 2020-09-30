@@ -42,8 +42,9 @@ async function carregaPag() {
 
 async function fetchDevs() {
 
-  const res = await fetch('./js/dados/devs.json', { method: 'GET', mode: 'cors' });
+  const res = await fetch('http://localhost:3001/devs');
   const json = await res.json();
+
 
   allDevs = json.map(devs => {
     const { name, picture, programmingLanguages } = devs;
