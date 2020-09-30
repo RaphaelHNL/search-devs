@@ -44,7 +44,7 @@ async function fetchDevs() {
 
   const myInit = {
     method: 'GET',
-    mode: 'cors',
+    mode: 'no-cors',
     cache: 'default'
   };
 
